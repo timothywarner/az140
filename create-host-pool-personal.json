@@ -1,0 +1,43 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"resourceGroupName": {
+			"type": "string",
+			"defaultValue": "<your-resource-group-name>",
+			"metadata": {
+				"description": "The name of the resource group."
+			}
+		},
+		"location": {
+			"type": "string",
+			"defaultValue": "<your-location>",
+			"metadata": {
+				"description": "The location of the resource group."
+			}
+		},
+		"hostPoolName": {
+			"type": "string",
+			"defaultValue": "<your-host-pool-name>",
+			"metadata": {
+				"description": "The name of the host pool."
+			}
+		}
+	},
+	"resources": [
+		{
+			"apiVersion": "2021-04-01",
+			"type": "Microsoft.DesktopVirtualization/hostPools",
+			"name": "[parameters('hostPoolName')]",
+			"location": "[parameters('location')]",
+			"properties": {
+				"description": "Azure Virtual Desktop host pool with personal desktops and automatic assignment method.",
+				"friendlyName": "AVD Personal Desktop Host Pool",
+				"hostPoolType": "Pooled",
+				"maxSessionLimit": 1,
+				"loadBalancerType": "Persistent",
+				"personalDesktopAssignmentType": "Automatic"
+			}
+		}
+	]
+}
