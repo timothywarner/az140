@@ -20,6 +20,11 @@
 - Peerings
 - DNS
 
+### Storage
+
+- Images and builder
+- Upgrade / drain mode
+
 ### Governance
 
 - Conditional Access & MFA
@@ -38,4 +43,9 @@
 
 
 ## Day 2
+
+### Continuity and DR
+
+- ASR
+- Vault backup
 
