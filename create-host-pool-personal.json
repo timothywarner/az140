@@ -22,6 +22,10 @@
 			"metadata": {
 				"description": "The name of the host pool."
 			}
+		},
+		"loadBalancerType": {
+			"type": "string",
+			"defaultValue": "BreadthFirst"
 		}
 	},
 	"resources": [
@@ -35,7 +39,7 @@
 				"friendlyName": "AVD Personal Desktop Host Pool",
 				"hostPoolType": "Pooled",
 				"maxSessionLimit": 1,
-				"loadBalancerType": "Persistent",
+				"loadBalancerType": "[parameters('loadBalancerType')]",
 				"personalDesktopAssignmentType": "Automatic"
 			}
 		}

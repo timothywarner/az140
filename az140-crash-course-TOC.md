@@ -20,10 +20,7 @@
 - Peerings
 - DNS
 
-### Storage
 
-- Images and builder
-- Upgrade / drain mode
 
 ### Governance
 
@@ -42,10 +39,54 @@
 - Whizlabs
 
 
+
+
+
 ## Day 2
+
+### Networking
+
+- Shortpath
+- NSGs
+- Peering
+- VPN gateway
+
+### Storage
+
+- VM disks and options
+- Storage account blobs and files (SKUs)
+- Images and builder
+- Upgrade / drain mode
+
+### Lifecycle management
+
+- Automation account
+
+### Apps
+
+- Golden image
+- RemoteApp
+- MSIX app attach
+  - MSIX packaging tool
 
 ### Continuity and DR
 
 - ASR
 - Vault backup
 
+### Security
+
+- Defender for Cloud
+- RBAC (Desktop Virtualization User role; Storage File Data SMB Share Contributor role)
+- Custom roles
+
+### Monitoring
+
+- Workbooks
+- Alerts
+
+### Exam prep
+
+- Item types/sandbox
+- Online testing
+- Whizlabs
